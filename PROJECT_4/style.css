@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:#eef2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    padding:20px;
+}
+.container{
+    background-color: #fff;
+    padding:25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width:100%;
+    max-width:350px;
+    text-align:center;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius: 6px;
+    max-width:92%;
+}
+#convertedHeight{
+    margin:5px 0;
+    font-weight:bold;
+    color:#444;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+button{
+    flex:1;
+    padding:10px;
+    border:none;
+    background-color:#007bff;
+    color:white;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:#0056b3;
+}
+#result{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+.chart{
+    text-align:left;
+    margin-top:20px;
+    font-size:14px;
+}
+.chart ul {
+    padding-left:20px;
+}
+.chart.label{
+    font-weight:bold;
+}
+.result-underweight{
+    color:#0077b6;
+}
+.result-normal{
+    color:#2a9d8f;
+}
+.result-overweight{
+    color:#f4a261;
+}
+.result-obese{
+    color:#e63946;
+}

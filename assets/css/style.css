@@ -1880,3 +1880,70 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* center the two cards */
+}
+
+.service-item {
+  background-color: #1e1e1e; /* dark background like certificate page */
+  border-radius: 12px;
+  overflow: hidden;
+  width: calc(50% - 10px); /* two cards per row */
+  cursor: pointer;
+  color: #fff; /* text color white */
+}
+
+.service-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px;
+}
+
+.service-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon-box {
+  transform: scale(1.1); /* only icon grows slightly */
+}
+
+.service-item-title {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.service-item:hover .service-item-title {
+  color: #ffb400; /* hover title color */
+}
+
+.service-item-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+  color: #ccc; /* lighter text color */
+}
+
+.service-item:hover .service-item-text {
+  color: #fff; /* hover text color */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%; /* one card per row on mobile */
+  }
+}
